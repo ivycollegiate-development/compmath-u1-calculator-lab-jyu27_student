@@ -23,6 +23,9 @@ def get_number(prompt):
     """
     raw = input(prompt)
     return float(raw)
+    except ValueError
+    print("Please enter a valid number.")
+
 
 
 def divide(a, b):
@@ -33,6 +36,8 @@ def divide(a, b):
     print a friendly message, or raise ValueError with a clear message.
     """
     return a / b
+    print("Cannot divide by zero.")
+
 
 
 def main():
