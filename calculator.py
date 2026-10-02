@@ -2,17 +2,26 @@
 
 This calculator WORKS but has NO GUARDRAILS.
 Your job: make it survive bad input and division by zero.
+  =
 """
 
-MENU = """
+MENU =
 Choose an operation:
-  1) add (+)
-  2) subtract (-)
-  3) multiply (*)
-  4) divide (/)
-  q) quit
-"""
+1) add (+)
+2) subtract (-)
+3) multiply (*)
+4) divide (/)
+5) Fahrenheit -> Celsius
+6) Celsius -> Fahrenheit
+7) Celsius -> Kelvin
+8) km -> miles
+9) miles -> km
+10) kg -> lbs
+11) lbs -> kg
+q) quit
 
+KM_PER_MILE = 1.609344
+KG_PER_ LB = 0.45359237
 
 def get_number(prompt):
     """Ask the user for a number.
@@ -53,6 +62,10 @@ def main():
         if choice not in ("1", "2", "3", "4"):
             print("Please pick 1, 2, 3, 4, or q.")
             continue
+
+if choice in ("5"
+"6","7"):celsius = f to__c(a) if choice =="5"elsea if is_below_absolute_zero(celsius):print(f"{celsius:.2f} C is below absolute zero — refusing.")continue if choice == "5": result = celsius elif choice == "6": result = c_to_f(a)else:result = c_to_k(a)print(f"Result: {result}")continue if choice in ("8","9","10","11"):if choice =="8":result = km_to_miles(a)elif choice =="9":result = miles_to_km(a)elif choice =="10":result = kg_to_lbs(a)else:result = lbs_to_kg(aprint(f"Result: {result}")
+continue
 
         a = get_number("First number: ")
         b = get_number("Second number: ")
